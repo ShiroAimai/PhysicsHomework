@@ -1,22 +1,25 @@
 ﻿
 using UnityEngine;
 
-public abstract class BaseBallController : MonoBehaviour
+namespace Gameplay
 {
-    private bool _isEnabled = true;
-
-    public bool enabled
+    public abstract class BaseBallController : MonoBehaviour
     {
-        get => _isEnabled;
-        set
+        private bool isIsEnabled = true;
+
+        public bool IsEnabled
         {
-            if (_isEnabled == value) return;
-            _isEnabled = value;
-            OnControllerStateChange(_isEnabled);
+            get => isIsEnabled;
+            set
+            {
+                if (isIsEnabled == value) return;
+                isIsEnabled = value;
+                OnControllerStateChange(isIsEnabled);
+            }
         }
-    }
 
-    protected virtual void OnControllerStateChange(bool value)
-    {
+        protected virtual void OnControllerStateChange(bool value)
+        {
+        }
     }
 }
