@@ -9,6 +9,6 @@ PhysicMaterial:
   m_Name: Pin
   dynamicFriction: 0.1
   staticFriction: 0.25
-  bounciness: 0.55
+  bounciness: 0.45
   frictionCombine: 0
   bounceCombine: 3
