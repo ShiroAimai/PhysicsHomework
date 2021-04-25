@@ -71,5 +71,13 @@ namespace Gameplay
 
             onForceUpdate?.Invoke(force, maxForce);
         }
+
+        protected override void OnControllerStateChange(bool value)
+        {
+            base.OnControllerStateChange(value);
+            if (!value) return;
+            _body.velocity = Vector3.zero;
+            _body.angularVelocity = Vector3.zero;
+        }
     }
 }
