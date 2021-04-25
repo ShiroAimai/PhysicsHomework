@@ -1,8 +1,9 @@
 # Bowling Simulation
 
-# About the game
-The game is meant to be a simplified physic simulation of a bowling round. 
+The game is developed using Unity 2020.3.0f1.
 
+# About the game
+The game is meant to be a simplified physic simulation of a bowling round.
 
 # How to play
 Once Unity is open go to ***Assets/Scenes/GameScene*** and play.
