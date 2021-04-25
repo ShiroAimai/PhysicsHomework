@@ -1022,13 +1022,24 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.3168223, y: -0, z: -0, w: 0.94848496}
-  m_LocalPosition: {x: 0, y: 13.59, z: -30.08}
+  m_LocalRotation: {x: 0.29237175, y: 0, z: 0, w: 0.9563048}
+  m_LocalPosition: {x: 0, y: 13.1, z: -30.38}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 36.942, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 34, y: 0, z: 0}
+--- !u!114 &1054186443 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4908841947609091319, guid: 0db586e610a04624fb38e588451c4e79, type: 3}
+  m_PrefabInstance: {fileID: 625138151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5622e10c48ea2174e961fdf0207cfdc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197217011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,8 +1114,23 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  onBallTimerUpdate:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1054186443}
+        m_TargetAssemblyTypeName: UI.BallTimerController, Assembly-CSharp
+        m_MethodName: UpdateTimer
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   clearStageAfterSeconds: 5
-  pinsRestPositionInWorld: {fileID: 1618631169}
+  ballTimerToReachPins: 15
   ball: {fileID: 1988666514}
   pins:
   - {fileID: 3815474377507490991}
